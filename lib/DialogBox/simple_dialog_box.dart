@@ -17,7 +17,9 @@ class _dialogState extends State<dialog> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+
         children: [
+
           TextButton(
             onPressed: () => showDialog<String>(
               context: context,
@@ -25,6 +27,7 @@ class _dialogState extends State<dialog> {
                 child:Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+
                     children: [
                       Text(' simple dialog page ')
                     ],
@@ -60,6 +63,7 @@ class _dialogState extends State<dialog> {
                 child:Center(
                   child: Column(
                     children: [
+
                       Text(' full sreen  dialog page ')
                     ],
                   ),
@@ -68,6 +72,7 @@ class _dialogState extends State<dialog> {
             ),
             child:  Text('full Screen  Dialog'),
           ),
+
         ],
       ),
     );
