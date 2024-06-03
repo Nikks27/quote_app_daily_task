@@ -13,13 +13,11 @@ class _dialogState extends State<dialog> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('dialog '),
+        title: Text('Dialog '),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-
         children: [
-
           TextButton(
             onPressed: () => showDialog<String>(
               context: context,
@@ -27,34 +25,33 @@ class _dialogState extends State<dialog> {
                 child:Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-
                     children: [
-                      Text(' simple dialog page ')
+                      Text(' Simple DialogBox page ')
                     ],
                   ),
                 ),
               ),
             ),
-            child:  Text('Simple  Dialog'),
+            child:  Text('Simple  DialogBox'),
           ),
           TextButton(
             onPressed: () => showDialog<String>(
               context: context,
               builder: (BuildContext context) => AlertDialog(
-                title: Text(' do yo want exit '),
+                title: Text(' Do Yo Want Exit '),
                 actions: [
                   Row(
                     children: [
                       Text(' cancel '),
                       TextButton(onPressed: () {
                         Navigator.of(context).pop();
-                      }, child: Text('back'))
+                      }, child: Text('Back'))
                     ],
                   )
                 ],
               ),
             ),
-            child:  Text('alert Dialog'),
+            child:  Text('Alert Dialog'),
           ),
           TextButton(
             onPressed: () => showDialog<String>(
@@ -63,16 +60,14 @@ class _dialogState extends State<dialog> {
                 child:Center(
                   child: Column(
                     children: [
-
-                      Text(' full sreen  dialog page ')
+                      Text('fullsreen dialogBox page ')
                     ],
                   ),
                 ),
               ),
             ),
-            child:  Text('full Screen  Dialog'),
+            child:  Text('fullScreen DialogBox'),
           ),
-
         ],
       ),
     );
