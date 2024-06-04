@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../DialogBox/simple_dialog_box.dart';
+import '../Random Quote/random_quotes.dart';
 import '../invoice/invoice.dart';
 
 
@@ -15,7 +16,7 @@ class quoteApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         // '/' : (context) => dialog(),
-        '/invoice' : (context) => invoice(),
+        '/' : (context) => QuotesRandom(),
       },
     );
   }
