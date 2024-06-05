@@ -7,16 +7,12 @@ import '../utils/quoteList.dart';
 QuoteModel? quoteModel;
 
 final List<Color> cardColors = [
-  Colors.brown,
-  Colors.blue,
-  Colors.teal,
-  Colors.green,
-  Colors.purple,
-  Colors.red,
+  Color(0xff1895ad),
+  Color(0xffa1d5e2),
+  // Color(0xfff1f1f2),
+
   Colors.grey,
-  Colors.pink,
-  Colors.blueAccent,
-  Colors.lightGreenAccent,
+
 ];
 
 class QuotesRandom extends StatefulWidget {
