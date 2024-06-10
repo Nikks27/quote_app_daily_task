@@ -4,6 +4,7 @@ import '../DialogBox/simple_dialog_box.dart';
 import '../Random Quote/random_quotes.dart';
 import '../TongalView/tongalview.dart';
 import '../invoice/invoice.dart';
+import '../invoice/pdf.dart';
 
 
 
@@ -17,7 +18,9 @@ class quoteApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         // '/' : (context) => dialog(),
-        '/' : (context) => TogalView(),
+        '/' : (context) => InvoiceGenerator(),
+         '/detail': (context) => const InvoiceGenerator(),
+         '/pdf': (context) => const PdfScreen(),
       },
     );
   }

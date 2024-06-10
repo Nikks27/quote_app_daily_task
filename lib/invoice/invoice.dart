@@ -1,97 +1,153 @@
 import 'package:flutter/material.dart';
 
 
-class invoice extends StatefulWidget {
-  const invoice({super.key});
+class InvoiceGenerator extends StatefulWidget {
+  const InvoiceGenerator({super.key});
 
   @override
-  State<invoice> createState() => _invoiceState();
+  State<InvoiceGenerator> createState() => _InvoiceGeneratorState();
 }
 
-class _invoiceState extends State<invoice> {
+class _InvoiceGeneratorState extends State<InvoiceGenerator> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('invoice'),
-      ),
-      body: Column(
-        children: [
-          Center(
-            child: TextButton(
-                onPressed: () {
-                  TextEditingController txtcontroller = TextEditingController();
-                  if (invoise == txtcontroller) {
-                    null;
-                  } else {
-                    TextEditingController txtname = TextEditingController();
-                    TextEditingController txtprice = TextEditingController();
-                    TextEditingController txtqnty = TextEditingController();
-
-                    setState(() {
-                      invoise.add(invoicemodel(
-                        name: txtname,
-                        price: txtprice,
-                        qty: txtqnty,
-                      ));
-                    });
-                  }
-                },
-                child: Text(' add ')),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title:const Text(
+            'Invoice generator',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          ...List.generate(
-              invoise.length,
-                  (index) => Center(
-                child: Container(
-                  height: 300,
-                  width: 230,
-                  decoration: BoxDecoration( borderRadius: BorderRadius.circular(10),
-                      border: Border.all(width: 2,color: Colors.black,)),
-                  child: Column(
-                    children: [
-                      buildTextField(
-                          name: 'name', controller: invoise[index].name),
-
-                      buildTextField(
-                          name: 'price', controller: invoise[index].price),
-                      buildTextField(
-                          name: 'Qunty', controller: invoise[index].qty)
-                    ],
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 13),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed('/pdf');
+                },
+                child: const Icon(
+                  Icons.picture_as_pdf_outlined,
+                  size: 28,
+                ),
+              ),
+            ),
+          ],
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(7),
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Customer',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.brown.shade400,
                   ),
                 ),
-              ))
-        ],
+                trailing: Text(
+                  '${invoiceDetails[selectedIndex]['name']}',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.brown.shade400,
+                  ),
+                ),
+              ),
+              const Divider(),
+              const SizedBox(
+                height: 27,
+              ),
+              const Text(
+                'Invoice Items',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const ListTile(
+                title: Text(
+                  'Develop Software Solution',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+                trailing: Text(
+                  'Rs. 2999/-',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ),
+              const ListTile(
+                title: Text(
+                  'Deployment Assistant',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+                trailing: Text(
+                  'Rs. 1999/-',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ),
+              const ListTile(
+                title: Text(
+                  'Produce Documentation',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+                trailing: Text(
+                  'Rs. 1599/-',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ),
+              const ListTile(
+                title: Text(
+                  'Technical Engagement',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+                trailing: Text(
+                  'Rs. 1200/-',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ),
+              const ListTile(
+                title: Text(
+                  'Application',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+                trailing: Text(
+                  'Rs. 1159/-',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    'Total',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.brown.shade400),
+                  ),
+                  Text(
+                    '${invoiceDetails[selectedIndex]['price']}',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.brown.shade400),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-
-Widget buildTextField({
-  TextEditingController? controller,
-  required String name,
-}) {
-  return Padding(
-    padding: const EdgeInsets.all(8.0),
-    child: TextField(
-      controller: controller,
-      decoration: InputDecoration(
-          prefixIcon: Icon(Icons.account_box_outlined), label: Text('name')),
-    ),
-  );
-}
-
-List<invoicemodel> invoise = [];
-
-class invoicemodel {
-  TextEditingController? name;
-  TextEditingController? qty;
-  TextEditingController? price;
-
-  invoicemodel({this.name, this.qty, this.price});
-}
-
-TextEditingController txtcontroller = TextEditingController();
-
-String name = '';
-String price = '';
-String qty = '';
