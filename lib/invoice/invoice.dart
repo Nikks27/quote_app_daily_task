@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'globalList.dart';
+
 
 class InvoiceGenerator extends StatefulWidget {
   const InvoiceGenerator({super.key});
@@ -74,41 +76,11 @@ class _InvoiceGeneratorState extends State<InvoiceGenerator> {
               ),
               const ListTile(
                 title: Text(
-                  'Develop Software Solution',
+                  'Asus Vivobook ',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
                 trailing: Text(
-                  'Rs. 2999/-',
-                  style: TextStyle(fontSize: 13),
-                ),
-              ),
-              const ListTile(
-                title: Text(
-                  'Deployment Assistant',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-                ),
-                trailing: Text(
-                  'Rs. 1999/-',
-                  style: TextStyle(fontSize: 13),
-                ),
-              ),
-              const ListTile(
-                title: Text(
-                  'Produce Documentation',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-                ),
-                trailing: Text(
-                  'Rs. 1599/-',
-                  style: TextStyle(fontSize: 13),
-                ),
-              ),
-              const ListTile(
-                title: Text(
-                  'Technical Engagement',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-                ),
-                trailing: Text(
-                  'Rs. 1200/-',
+                  'Rs. 61000/-',
                   style: TextStyle(fontSize: 13),
                 ),
               ),
@@ -118,7 +90,7 @@ class _InvoiceGeneratorState extends State<InvoiceGenerator> {
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
                 trailing: Text(
-                  'Rs. 1159/-',
+                  'Rs. 1999/-',
                   style: TextStyle(fontSize: 13),
                 ),
               ),

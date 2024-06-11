@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'globalList.dart';
+
 
 class InvoiceDetails extends StatefulWidget {
   const InvoiceDetails({super.key});
@@ -16,7 +18,7 @@ class _InvoiceDetailseState extends State<InvoiceDetails> {
         appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            'Invoice generator',
+            'Invoice Items',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
