@@ -116,9 +116,28 @@ https://github.com/Nikks27/quote_app_daily_task/assets/148762716/83813ca7-87df-4
   <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/c2a30508-07af-4c4c-bf87-f58f028b9a75" height ="550">
    <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/b03832a2-36d0-456a-b6f2-e721811fc32d" height ="550">
 
-
-
 https://github.com/Nikks27/quote_app_daily_task/assets/148762716/027a5b40-3d4f-46fe-8e11-11def5e1db82
+
+</div>
+
+</div>
+
+# Invoice Generator
+
+<h1 align="center"> 1.Invoice Generator </h1>
+
+<h1 align="left"></h1>
+
+<div align ="center">
+
+  <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/62b2f3a2-7690-4263-9317-7d114ad6f829" height ="550">
+   <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/5ab64790-1606-4192-90cb-4244d013b876" height ="550">
+    <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/7be3af29-b330-4e3c-a468-4375b87fcc6f" height ="550">
+
+
+
+
+https://github.com/Nikks27/quote_app_daily_task/assets/148762716/418a658e-45a5-4e4a-a17b-5296afc15286
 
 
 
