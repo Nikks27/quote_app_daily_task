@@ -88,22 +88,7 @@ void main() {
 }
 ```
 
-# Random Quotes Generator
 
-<h1 align="center"> 1.Random Quotes Generator </h1>
-
-<h1 align="left"></h1>
-
-<div align ="center">
-
-  <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/8ba9d311-5acc-4f9b-bb86-0848c41cb13f" height ="550">
-   <img src = "https://github.com/Nikks27/quote_app_daily_task/assets/148762716/2f42f05b-0663-4f46-a310-209f3c030c6f" height ="550">
-
-
-https://github.com/Nikks27/quote_app_daily_task/assets/148762716/83813ca7-87df-40d0-9dea-907640203a25
-
-
-</div>
 
 # Listview to Gridview Toggle View
 
